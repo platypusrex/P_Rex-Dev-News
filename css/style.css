@@ -1,29 +1,51 @@
 body {
-    margin: 8% 0;
+    margin: 3% 0;
     font-family: 'Oxygen', sans-serif;
+}
+
+.heading-container {
+    margin: 0 0 40px 0;
+}
+
+.title-container {
+    color: #fff;
+    background: #67BCDB;
+    width: 70%;
+    padding: 2%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.title-container hr {
+    width: 85%;
+}
+
+.heading-container h1 {
+    font-size: 70px;
+    font-family: 'Monofett', cursive;
+}
+
+.news-filter-container {
+    margin: 30px 0;
 }
 
 .lead {
     margin-bottom: 2px;
 }
-
 .panel {
     max-width: 258px;
     margin-bottom: 40px;
     border-radius: 10px;
 }
-
 .panel-heading {
     border-bottom: 0;
     padding: 0;
     display: table;
     margin: 0 auto;
 }
-
 .panel-body {
     padding: 5px 2px 15px;
 }
-
 .user-img {
     height: 258px;
     width: 258px;
@@ -31,10 +53,26 @@ body {
     border-top-right-radius: 10px;
 }
 
+@media screen and (min-width: 768px){
+    .panel {
+        max-width: 218px;
+    }
+    .user-img {
+        height: 218px;
+        width: 218px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .panel-container {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
 .btn-container {
     margin: 10px 0 0;
 }
-
 .btn-container .btn-info {
     height: 55px;
     width: 60px;
@@ -44,7 +82,6 @@ body {
     margin: 4px;
     box-shadow: 0 2px 2px #888888;
 }
-
 .btn-container .btn-info:hover,
 .btn-container .btn-info.active:focus,
 .btn-container .btn-info:focus,
@@ -52,7 +89,6 @@ body {
     border-bottom:1px solid #af4451;
     outline: none;
 }
-
 .btn-container .btn-info:active,
 .btn-container .btn-info.active {
     color: #fff;
@@ -61,14 +97,12 @@ body {
     outline-offset: none;
     margin-top: 4px;
 }
-
 .btn-container .btn:focus,
 .btn-container .btn:active:focus,
 .btn-container .btn.active:focus {
     outline: none;
     outline-offset: 0px;
 }
-
 .btn-container .btn-info p {
     line-height: 44px;
 }
@@ -79,7 +113,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .image img {
     margin: 0 auto;
     height: 200px;
@@ -95,8 +128,9 @@ body {
     background: rgba(0,0,0,0.6);
     margin: auto;
     height: 100%;
-    width: 280px;
+    width: 268px;
 }
+
 
 .modal-btn a {
     display: inline-block;
@@ -105,7 +139,6 @@ body {
     border-width: 2px;
     border-radius: 0;
 }
-
 .btn-danger {
 
     background: transparent;
@@ -135,11 +168,9 @@ body {
 .user-info {
     margin: 13px 0 0;
 }
-
 .user-info i {
     font-size: 20px;
 }
-
 .user-info span,
 .user-info a {
     color: inherit;
@@ -147,19 +178,3 @@ body {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px){
-    .panel {
-        max-width: 218px;
-    }
-    .user-img {
-        height: 218px;
-        width: 218px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .panel-container {
-        display: table;
-        margin: 0 auto;
-    }
-}

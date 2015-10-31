@@ -35,6 +35,7 @@
         };
 
         camperNewsService.getNewsFeeds().then(onSuccess, onError);
+        $scope.sortOrder = '-rank';
 
     }]);
 }(angular.module('CamperNewsApp')));
